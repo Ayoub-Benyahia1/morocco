@@ -38,6 +38,7 @@ function Tanger() {
                   <img
                     src={images[index]}
                     className="h-[60%] w-[95%] md:h-[80%] md:w-auto rounded-md"
+                    loading="lazy"
                   />
                 </motion.div>
               </>

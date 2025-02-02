@@ -37,6 +37,7 @@ function Agadir() {
                 <img
                   src={images[index]}
                   className="h-[60%] w-[95%] md:h-[70%] md:w-auto rounded-md"
+                  loading="lazy"
                 />
               </motion.div>
             )}

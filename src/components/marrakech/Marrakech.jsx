@@ -55,12 +55,13 @@ function Marrakech() {
               <>
                 <motion.div
                   style={styles}
-                  transition={{ ease: "easeInOut"}}
+                  transition={{ ease: "easeInOut" }}
                   className="h-[100%] fixed top-0 left-0 right-0 z-10 flex items-center justify-center"
                 >
                   <img
                     src={images[index]}
                     className="h-[60%] w-[95%] md:h-[80%] md:w-auto rounded-md"
+                    loading="lazy"
                   />
                 </motion.div>
               </>

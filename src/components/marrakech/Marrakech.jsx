@@ -2,18 +2,19 @@ import React, { createRef, useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { sectionsConfig } from "./SectionsConfig";
 import { useSectionAnimation } from "../Animation";
-import img1 from "../../assets/marrakech/marrakech31.jpg";
-import img2 from "../../assets/marrakech/marrakech8.jpg";
-import img3 from "../../assets/marrakech/Marrakech-jardin-majorelle.jpg";
-import img4 from "../../assets/marrakech/marrakech27.jpg";
-import img5 from "../../assets/marrakech/marrakech-vol-montgolfiere.jpg";
-import img6 from "../../assets/marrakech/mehare-dunes-merzouga.jpg";
-import img7 from "../../assets/marrakech/Ourika-setti-fatma.jpg";
-import img8 from "../../assets/marrakech/marrakech-oukaimeden.jpg";
-import img9 from "../../assets/marrakech/marrakech-casacades-ouzoud.jpeg";
-import img10 from "../../assets/marrakech/marrakech33.jpg";
 
-const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10];
+const images = [
+  "https://ik.imagekit.io/nuywxjba2/morocco/marrakesh/marrakech31.jpg?updatedAt=1743875564654",
+  "https://ik.imagekit.io/nuywxjba2/morocco/marrakesh/marrakech8.jpg?updatedAt=1743875535749",
+  "https://ik.imagekit.io/nuywxjba2/morocco/marrakesh/Marrakech-jardin-majorelle.jpg?updatedAt=1743875356363",
+  "https://ik.imagekit.io/nuywxjba2/morocco/marrakesh/marrakech27.jpg?updatedAt=1743875606424",
+  "https://ik.imagekit.io/nuywxjba2/morocco/marrakesh/marrakech-vol-montgolfiere.jpg?updatedAt=1743875297286",
+  "https://ik.imagekit.io/nuywxjba2/morocco/marrakesh/mehare-dunes-merzouga.jpg?updatedAt=1743875294358",
+  "https://ik.imagekit.io/nuywxjba2/morocco/marrakesh/Ourika-setti-fatma.jpg?updatedAt=1743875359972",
+  "https://ik.imagekit.io/nuywxjba2/morocco/marrakesh/marrakech-oukaimeden.jpg?updatedAt=1743875612399",
+  "https://ik.imagekit.io/nuywxjba2/morocco/marrakesh/marrakech-casacades-ouzoud.jpeg?updatedAt=1743875336590",
+  "https://ik.imagekit.io/nuywxjba2/morocco/marrakesh/marrakech33.jpg?updatedAt=1743875330583",
+];
 
 function Marrakech() {
   const [isVisible, setIsVisible] = useState(false);
@@ -34,7 +35,6 @@ function Marrakech() {
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-  // bg-[#e8b690]
 
   return (
     <div id="marrakech">

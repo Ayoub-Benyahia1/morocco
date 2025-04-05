@@ -1,7 +1,6 @@
 import {
   motion,
   useMotionTemplate,
-  useMotionValueEvent,
   useScroll,
   useTransform,
 } from "framer-motion";

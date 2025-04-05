@@ -1,11 +1,5 @@
 import React, { useRef, useEffect, useState } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
-import img1 from "../../assets/chefchaouen/chefchaouen1.jpg";
-import img2 from "../../assets/chefchaouen/chefchaouen2.jpg";
-import img3 from "../../assets/chefchaouen/chefchaouen3.jpg";
-import img4 from "../../assets/chefchaouen/chefchaouen4.jpg";
-import img5 from "../../assets/chefchaouen/chefchaouen5.jpg";
-import img6 from "../../assets/chefchaouen/chefchaouen6.jpg";
 
 function Chefchaouen() {
   const ref = useRef(null);

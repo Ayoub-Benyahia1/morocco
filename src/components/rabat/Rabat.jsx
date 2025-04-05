@@ -2,13 +2,14 @@ import React, { createRef, useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { sectionsConfig } from "./SectionsConfig";
 import { useSectionAnimation } from "../Animation";
-import img1 from "../../assets/rabat/rabat6.jpg";
-import img2 from "../../assets/rabat/rabat.jpg";
-import img3 from "../../assets/rabat/rabat7.jpg";
-import img4 from "../../assets/rabat/medina-de-rabat.jpg";
-import img5 from "../../assets/rabat/rabat9.jpg";
 
-const images = [img1, img2, img3, img4, img5];
+const images = [
+  "https://ik.imagekit.io/nuywxjba2/morocco/rabat/rabat6.jpg?updatedAt=1743874982000",
+  "https://ik.imagekit.io/nuywxjba2/morocco/rabat/rabat.jpg?updatedAt=1743874968910",
+  "https://ik.imagekit.io/nuywxjba2/morocco/rabat/rabat7.jpg?updatedAt=1743874976716",
+  "https://ik.imagekit.io/nuywxjba2/morocco/rabat/medina-de-rabat.jpg?updatedAt=1743874976438",
+  "https://ik.imagekit.io/nuywxjba2/morocco/rabat/rabat9.jpg?updatedAt=1743874985851",
+];
 
 function Rabat() {
   const [isVisible, setIsVisible] = useState(false);

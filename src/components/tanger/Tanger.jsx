@@ -1,15 +1,16 @@
-import React, { createRef, useEffect, useRef, useState } from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
+import React, { createRef, useRef } from "react";
+import { motion } from "framer-motion";
 import { sectionsConfig } from "./SectionsConfig";
 import { useSectionAnimation } from "../Animation";
-import img1 from "../../assets/tanger/tanger1.jpg";
-import img2 from "../../assets/tanger/tanger2.jpg";
-import img3 from "../../assets/tanger/tanger3.jpg";
-import img4 from "../../assets/tanger/tanger4.jpg";
-import img5 from "../../assets/tanger/tanger5.jpg";
-import img6 from "../../assets/tanger/tanger7.jpg";
 
-const images = [img1, img2, img3, img4, img5, img6];
+const images = [
+  "https://ik.imagekit.io/nuywxjba2/morocco/tanger/tanger1.jpg?updatedAt=1743874815437",
+  "https://ik.imagekit.io/nuywxjba2/morocco/tanger/tanger2.jpg?updatedAt=1743874859775",
+  "https://ik.imagekit.io/nuywxjba2/morocco/tanger/tanger3.jpg?updatedAt=1743874866056",
+  "https://ik.imagekit.io/nuywxjba2/morocco/tanger/tanger4.jpg?updatedAt=1743874827321",
+  "https://ik.imagekit.io/nuywxjba2/morocco/tanger/tanger5.jpg?updatedAt=1743874855063",
+  "https://ik.imagekit.io/nuywxjba2/morocco/tanger/tanger7.jpg?updatedAt=1743874857541",
+];
 
 function Tanger() {
   const refs = useRef(sectionsConfig.map(() => createRef()));

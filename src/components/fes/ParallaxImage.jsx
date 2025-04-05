@@ -5,6 +5,7 @@ import {
   useTransform,
 } from "framer-motion";
 import React, { useRef } from "react";
+import OptimizedImage from "../OptimizedImage";
 
 function ParallaxImage({ className, alt, src, start, end }) {
   const ref = useRef(null);
@@ -20,14 +21,14 @@ function ParallaxImage({ className, alt, src, start, end }) {
   const transform = useMotionTemplate`translateY(${y}px) scale(${scale})`;
 
   return (
-    <motion.img
-      style={{ opacity, transform }}
-      src={src}
-      alt={alt}
-      className={className}
-      ref={ref}
-      loading="lazy"
-    />
+    <motion.div style={{ opacity, transform }} ref={ref}>
+      <OptimizedImage
+        src={src}
+        alt={alt}
+        className={className}
+        loading="lazy"
+      />
+    </motion.div>
   );
 }
 

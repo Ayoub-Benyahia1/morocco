@@ -1,15 +1,16 @@
 import React, { createRef, useRef } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import { sectionsConfig } from "./SectionsConfig";
 import { useSectionAnimation } from "../Animation";
-import img1 from "../../assets/agadir/agadir.jpg";
-import img2 from "../../assets/agadir/agadir-oufla-aerienne-Kasbah.jpg";
-import img3 from "../../assets/agadir/barrage-youssef-ibn-tachfine.jpg";
-import img4 from "../../assets/agadir/agadir3.jpg";
-import img5 from "../../assets/agadir/agadir4.jpg";
-import img6 from "../../assets/agadir/agadir6.jpg";
 
-const images = [img1, img2, img3, img4, img5, img6];
+const images = [
+  "https://ik.imagekit.io/nuywxjba2/morocco/agadir/agadir.jpg?updatedAt=1743875743467",
+  "https://ik.imagekit.io/nuywxjba2/morocco/agadir/agadir-oufla-aerienne-Kasbah.jpg?updatedAt=1743875745510",
+  "https://ik.imagekit.io/nuywxjba2/morocco/agadir/barrage-youssef-ibn-tachfine.jpg?updatedAt=1743875720194",
+  "https://ik.imagekit.io/nuywxjba2/morocco/agadir/agadir3.jpg?updatedAt=1743875753337",
+  "https://ik.imagekit.io/nuywxjba2/morocco/agadir/agadir4.jpg?updatedAt=1743875708475",
+  "https://ik.imagekit.io/nuywxjba2/morocco/agadir/agadir6.jpg?updatedAt=1743875744062",
+];
 
 function Agadir() {
   const refs = useRef(sectionsConfig.map(() => createRef()));

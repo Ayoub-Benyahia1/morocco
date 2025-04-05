@@ -1,5 +1,6 @@
 import React, { useRef, useEffect, useState } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
+import OptimizedImage from "../OptimizedImage";
 
 function Chefchaouen() {
   const ref = useRef(null);
@@ -37,6 +38,15 @@ function Chefchaouen() {
     ["200px", `${scrollRange}px`]
   );
 
+  const images = [
+    "https://ik.imagekit.io/nuywxjba2/morocco/chefchaouen/chefchaouen1.jpg?updatedAt=1743875202756",
+    "https://ik.imagekit.io/nuywxjba2/morocco/chefchaouen/chefchaouen2.jpg?updatedAt=1743875213844",
+    "https://ik.imagekit.io/nuywxjba2/morocco/chefchaouen/chefchaouen3.jpg?updatedAt=1743875210284",
+    "https://ik.imagekit.io/nuywxjba2/morocco/chefchaouen/chefchaouen4.jpg?updatedAt=1743875221981",
+    "https://ik.imagekit.io/nuywxjba2/morocco/chefchaouen/chefchaouen5.jpg?updatedAt=1743875214867",
+    "https://ik.imagekit.io/nuywxjba2/morocco/chefchaouen/chefchaouen6.jpg?updatedAt=1743875195545",
+  ];
+
   return (
     <section id="chefchaouen" ref={ref} className="h-[400svh]">
       <h1 className="text-3xl md:text-9xl text-white font-google p-6 my-[20svh] uppercase text-center italic font-extrabold">
@@ -49,42 +59,13 @@ function Chefchaouen() {
           className="w-max lg:h-[70%] h-[60%] p-6"
         >
           <div className="w-max h-[100%] flex justify-start gap-6 p-1">
-            <img
-              src="https://ik.imagekit.io/nuywxjba2/morocco/chefchaouen/chefchaouen1.jpg?updatedAt=1743875202756"
-              alt="chefchaouen1"
-              className="w-auto h-full"
-              loading="lazy"
-            />
-            <img
-              src="https://ik.imagekit.io/nuywxjba2/morocco/chefchaouen/chefchaouen2.jpg?updatedAt=1743875213844"
-              alt="chefchaouen2"
-              className="w-auto h-full"
-              loading="lazy"
-            />
-            <img
-              src="https://ik.imagekit.io/nuywxjba2/morocco/chefchaouen/chefchaouen3.jpg?updatedAt=1743875210284"
-              alt="chefchaouen3"
-              className="w-auto h-full"
-              loading="lazy"
-            />
-            <img
-              src="https://ik.imagekit.io/nuywxjba2/morocco/chefchaouen/chefchaouen4.jpg?updatedAt=1743875221981"
-              alt="chefchaouen4"
-              className="w-auto h-full"
-              loading="lazy"
-            />
-            <img
-              src="https://ik.imagekit.io/nuywxjba2/morocco/chefchaouen/chefchaouen5.jpg?updatedAt=1743875214867"
-              alt="chefchaouen5"
-              className="w-auto h-full"
-              loading="lazy"
-            />
-            <img
-              src="https://ik.imagekit.io/nuywxjba2/morocco/chefchaouen/chefchaouen6.jpg?updatedAt=1743875195545"
-              alt="chefchaouen6"
-              className="w-auto h-full"
-              loading="lazy"
-            />
+            {images.map((image, index) => (
+              <OptimizedImage
+                src={image}
+                alt={`Chefchaouen Image ${index + 1}`}
+                className="h-[60%] w-[95%] md:h-[80%] md:w-auto rounded-md"
+              />
+            ))}
           </div>
         </motion.div>
       </div>

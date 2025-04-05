@@ -2,6 +2,7 @@ import React, { createRef, useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import { sectionsConfig } from "./SectionsConfig";
 import { useSectionAnimation } from "../Animation";
+import OptimizedImage from "../OptimizedImage";
 
 const images = [
   "https://ik.imagekit.io/nuywxjba2/morocco/marrakesh/marrakech31.jpg?updatedAt=1743875564654",
@@ -58,10 +59,10 @@ function Marrakech() {
                   transition={{ ease: "easeInOut" }}
                   className="h-[100%] fixed top-0 left-0 right-0 z-10 flex items-center justify-center"
                 >
-                  <img
+                  <OptimizedImage
                     src={images[index]}
+                    alt={`Marrakech Image ${index + 1}`}
                     className="h-[60%] w-[95%] md:h-[80%] md:w-auto rounded-md"
-                    loading="lazy"
                   />
                 </motion.div>
               </>

@@ -2,6 +2,7 @@ import React, { createRef, useRef } from "react";
 import { motion } from "framer-motion";
 import { sectionsConfig } from "./SectionsConfig";
 import { useSectionAnimation } from "../Animation";
+import OptimizedImage from "../OptimizedImage";
 
 const images = [
   "https://ik.imagekit.io/nuywxjba2/morocco/agadir/agadir.jpg?updatedAt=1743875743467",
@@ -35,11 +36,11 @@ function Agadir() {
                 style={styles}
                 className="h-[100%] fixed top-0 left-0 right-0 z-10 flex items-center justify-center"
               >
-                <img
-                  src={images[index]}
-                  className="h-[60%] w-[95%] md:h-[70%] md:w-auto rounded-md"
-                  loading="lazy"
-                />
+                <OptimizedImage
+                src={images[index]}
+                alt={`Agadir Image ${index + 1}`}
+                className="h-[60%] w-[95%] md:h-[80%] md:w-auto rounded-md"
+              />
               </motion.div>
             )}
           </motion.section>

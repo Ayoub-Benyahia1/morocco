@@ -9,8 +9,8 @@ import img6 from "../../assets/chefchaouen/chefchaouen6.jpg";
 
 function Chefchaouen() {
   const ref = useRef(null);
-  const containerRef = useRef(null); // For measuring container width
-  const [scrollRange, setScrollRange] = useState(0); // Store the dynamic scroll range
+  const containerRef = useRef(null);
+  const [scrollRange, setScrollRange] = useState(0);
 
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -26,7 +26,6 @@ function Chefchaouen() {
       setScrollRange(scrollDistance > 0 ? -scrollDistance : 0);
     };
 
-    // Set the initial value
     updateScrollRange();
 
     // Update when the window resizes
@@ -53,15 +52,45 @@ function Chefchaouen() {
         <motion.div
           ref={containerRef}
           style={{ x }}
-          className="w-max lg:h-[70%] h-[60%] p-6" // w-max to make it fit the content dynamically
+          className="w-max lg:h-[70%] h-[60%] p-6"
         >
           <div className="w-max h-[100%] flex justify-start gap-6 p-1">
-            <img src={img1} alt="" className="w-auto h-full" loading="lazy" />
-            <img src={img2} alt="" className="w-auto h-full" loading="lazy" />
-            <img src={img3} alt="" className="w-auto h-full" loading="lazy" />
-            <img src={img4} alt="" className="w-auto h-full" loading="lazy" />
-            <img src={img5} alt="" className="w-auto h-full" loading="lazy" />
-            <img src={img6} alt="" className="w-auto h-full" loading="lazy" />
+            <img
+              src="https://ik.imagekit.io/nuywxjba2/morocco/chefchaouen/chefchaouen1.jpg?updatedAt=1743875202756"
+              alt="chefchaouen1"
+              className="w-auto h-full"
+              loading="lazy"
+            />
+            <img
+              src="https://ik.imagekit.io/nuywxjba2/morocco/chefchaouen/chefchaouen2.jpg?updatedAt=1743875213844"
+              alt="chefchaouen2"
+              className="w-auto h-full"
+              loading="lazy"
+            />
+            <img
+              src="https://ik.imagekit.io/nuywxjba2/morocco/chefchaouen/chefchaouen3.jpg?updatedAt=1743875210284"
+              alt="chefchaouen3"
+              className="w-auto h-full"
+              loading="lazy"
+            />
+            <img
+              src="https://ik.imagekit.io/nuywxjba2/morocco/chefchaouen/chefchaouen4.jpg?updatedAt=1743875221981"
+              alt="chefchaouen4"
+              className="w-auto h-full"
+              loading="lazy"
+            />
+            <img
+              src="https://ik.imagekit.io/nuywxjba2/morocco/chefchaouen/chefchaouen5.jpg?updatedAt=1743875214867"
+              alt="chefchaouen5"
+              className="w-auto h-full"
+              loading="lazy"
+            />
+            <img
+              src="https://ik.imagekit.io/nuywxjba2/morocco/chefchaouen/chefchaouen6.jpg?updatedAt=1743875195545"
+              alt="chefchaouen6"
+              className="w-auto h-full"
+              loading="lazy"
+            />
           </div>
         </motion.div>
       </div>
